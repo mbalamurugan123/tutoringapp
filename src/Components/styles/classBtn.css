@@ -1,0 +1,21 @@
+.btn-class{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.class-btn{
+  float: left;
+  margin-top: 40vh;
+  padding: 50px 40px 50px 40px;
+  font-size: large;
+  background-color: rgb(57, 168, 232);
+  border : none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 3s;
+}
+.class-btn1{
+  margin-right: 150px;
+}
+.class-btn :hover{
+  transform: scale(1.1);
+}

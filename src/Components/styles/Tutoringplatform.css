@@ -1,0 +1,71 @@
+/* src/components/TutoringPlatform.css */
+.tutoring-platform {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.video-conferencing,
+.chat-messaging,
+.collaborative-whiteboard,
+.file-sharing,
+.screen-sharing {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.video-conferencing:hover,
+.chat-messaging:hover,
+.collaborative-whiteboard:hover,
+.file-sharing:hover,
+.screen-sharing:hover {
+  transform: scale(1.05);
+}
+
+.video-conferencing {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+.chat-messaging {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.collaborative-whiteboard {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.file-sharing {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.screen-sharing {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
