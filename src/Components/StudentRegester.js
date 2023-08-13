@@ -12,7 +12,6 @@ function StudentRegister() {
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
 
-
   const registerUser = async (email, password, name) => {
     try {
       await firebase.auth().createUserWithEmailAndPassword(email, password);
