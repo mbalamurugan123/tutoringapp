@@ -14,7 +14,7 @@ import DashBoard from './Components/dashboad';
 import Details1 from './Components/details';
 import ClassBtn from './Components/ClassBtn';
 import PaymentPage from './Components/PaymentPage';
-import UserList from './Components/demo';
+
 import TutoringPlatform from './Components/Tutoringplatform';
 import About from './Components/About';
 function App() {
@@ -54,7 +54,7 @@ function App() {
       <Route path='/class' element={<ClassBtn/>}></Route>
       <Route path='/PaymentPage' element={<PaymentPage/>}></Route>
       <Route path='/sidenav' element={<Sidenav/>}></Route>
-      <Route path='/demo' element={<UserList/>}></Route>
+
       <Route path='/tutoringplatform' element={<TutoringPlatform/>}></Route>
       {/* </AuthProvider> */}
 
