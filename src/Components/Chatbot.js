@@ -28,19 +28,19 @@ function Chatbot() {
   };
 
   const handleSubmit = async () => {
-    if (inputText.trim() !== '') {
-      // Send user message to Flask API
-      const response = await axios.get('http://127.0.0.1:5000/get', {
-        params: {
-          msg: inputText,
-        },
-      });
+    // if (inputText.trim() !== '') {
+    //   // Send user message to Flask API
+    //   const response = await axios.get('http://127.0.0.1:5000/get', {
+    //     params: {
+    //       msg: inputText,
+    //     },
+    //   });
       
-      const botMessage = response.data;
+    //   const botMessage = response.data;
       
-      setMessages([...messages, { text: inputText, user: true }, { text: botMessage, user: false }]);
-      setInputText('');
-    }
+    //   setMessages([...messages, { text: inputText, user: true }, { text: botMessage, user: false }]);
+    //   setInputText('');
+    // }
     
   };
 
