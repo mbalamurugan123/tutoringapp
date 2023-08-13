@@ -11,28 +11,10 @@ import StudentProf from './images/student-prof.png'
 import { useSelector } from 'react-redux';
 import { useEffect,useState } from 'react';
 
-import axios from 'axios';
+// import axios from 'axios';
 function DashBoard(){
   const [users, setUsers] = useState([]);
-  // const authToken = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYWxhMTIzQGdtYWlsLmNvbSIsImlhdCI6MTY5MDAwNjc2MCwiZXhwIjoxNjkwMDA4MjAwfQ.XZuRo31Tol8ZbI6Gp_MuOLQBWnOoSqMycnXIW4827Cw";
-  const authToken = localStorage.getItem('jwtToken');
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('http://localhost:8181/api/v1/users', {
-          headers: {
-            Authorization: `Bearer ${authToken}`, 
 
-          },
-        });
-        setUsers(response.data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-
-    fetchData();
-  }, [authToken]);
   const options={
   chart: {
     id: 'apexchart-example'
@@ -80,11 +62,6 @@ const series = [
 
       <div className="dash-card">
         <img src={StudentProf}alt="John" style={{width: '100%'}} />
-        <h3>{users.map((user) => (
-          <li key={user.id}>
-            {user.name} {user.lastname}
-          </li>
-        ))}</h3>
         <p className="title">B.Tech - Artifical Intelligence and Data Science</p>
         <p>Krishna College</p>
         <a className='dash-ico'><img src={whatsapp}></img> </a>

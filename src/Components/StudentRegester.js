@@ -6,7 +6,7 @@ import { Link, Navigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { firebase } from '../config';
 
-import axios from 'axios';
+// import axios from 'axios';
 function StudentRegister() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
