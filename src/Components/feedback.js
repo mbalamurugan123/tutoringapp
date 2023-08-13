@@ -12,7 +12,7 @@ const Feedback = () => {
     <div className="feedback-popup">
       <div className="feedback-container" >
         <h2>Feedback</h2>
-        <form onSubmit={handleSubmit}>
+        <form>
           <textarea 
             placeholder="Enter your feedback..." value={feedback} onChange={(e)=>setFeedback(e.target.value)}
           />
