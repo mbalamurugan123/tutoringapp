@@ -6,22 +6,20 @@ import logo2 from "./images/logo2.png"
 import { Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 function Navbar(){
+  const navigate=useNavigate();
   const handleClick = () => {
-
-    scroller.scrollTo('main-body', {
-      duration: 800,
-      delay: 0, 
-      smooth: 'easeInOutQuart', 
-    });
+  navigate("/main");
+  window.scrollTo({ left: 0, top: 600, behavior:"smooth" })
   };
   return(
     <div className="nav-part">
 
              <nav className="navigation">
               <Sidenav/>
-              <img className="logo-img" src={logo}></img>
-            <h1 id="title">MyEducator</h1>
+              <img className="logo-img" src={require('./images/logo3.png')}></img>
+            <h1 id="title">Study Wiz</h1>
         <div className="navigation-menu">
          <ul>
            <li className="li">
@@ -36,12 +34,12 @@ function Navbar(){
   <div class="dropdown-content">
     <a className='drop'>My Profile</a>
     <a className='drop' style={{color:'black'}}><Link to='/dash'>Dashboard</Link></a>
-    <Link to='/'>
+    {/* <Link to='/'> */}
       
     <a className='drop' 
-    // onClick={()=>{firebase.auth().signOut()}}
+    onClick={()=>{firebase.auth().signOut()}}
     >Logout</a>
-    </Link>
+    {/* </Link> */}
   </div>
 </div>
            </li>

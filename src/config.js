@@ -1,5 +1,5 @@
 // Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
+import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 // import { getDatabase } from "firebase/database"
 
@@ -13,16 +13,15 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
-
+import {getAuth} from 'firebase/auth';
 const firebaseConfig = {
-  apiKey: "AIzaSyARbquneqP6H5upDyd5Kmr6B2Mo-QfkEls",
-  authDomain: "onlinetutoring-4a1a5.firebaseapp.com",
-  databaseURL: "https://onlinetutoring-4a1a5-default-rtdb.firebaseio.com",
-  projectId: "onlinetutoring-4a1a5",
-  storageBucket: "onlinetutoring-4a1a5.appspot.com",
-  messagingSenderId: "395935064851",
-  appId: "1:395935064851:web:69bec6e7abe272b8b4f0e6",
-  measurementId: "G-QS0G584FNE"
+  apiKey: "AIzaSyAmT0RJe1tbHYPEW8uNCfYh1QuL6xgX1rA",
+  authDomain: "tutoringapp-2f16e.firebaseapp.com",
+  projectId: "tutoringapp-2f16e",
+  storageBucket: "tutoringapp-2f16e.appspot.com",
+  messagingSenderId: "55853615077",
+  appId: "1:55853615077:web:fd9a4eed1c70ce3a3a110c",
+  measurementId: "G-FTRC6Q45SF"
 };
 
 // Initialize Firebase
@@ -34,3 +33,4 @@ if(!firebase.apps.length){
   firebase.initializeApp(firebaseConfig);
 }
 export {firebase};
+// export const auth=getAuth(app);

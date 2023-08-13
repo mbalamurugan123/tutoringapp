@@ -14,13 +14,13 @@
 }
 
 .logo-img{
-  width: 3.7%;
-  height: 60%;
+  width: 5%;
+  height: 100%;
+  margin-top: 10px;
   margin-left: 60px;
   margin-right: 10px;
   margin-bottom: 10px;
 }
-
 
 .navigation-menu {
   margin-left: auto;

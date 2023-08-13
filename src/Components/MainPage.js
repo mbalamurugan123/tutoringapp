@@ -16,7 +16,7 @@ import { useState,useEffect } from "react";
 
 function MainPage(){  
   const [slideIndex, setSlideIndex] = useState(0);
-  
+
   useEffect(() => {
     const interval = setInterval(() => {
       setSlideIndex((prevIndex) => (prevIndex + 1) % 4);

@@ -26,7 +26,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 transition: 2s;
 float: right;
 opacity: 0.8;
-color: aliceblue;
+color: rgb(0, 0, 0);
 overflow-x: hidden;
 }
 .chat-cont p{
@@ -39,7 +39,6 @@ overflow-x: hidden;
   margin-top: 40px;
 }
 .chat-input{
-  margin-top: 350px;
   margin-left: 40px;
   width: 250px;
   height: 30px;
@@ -56,4 +55,52 @@ overflow-x: hidden;
   border-radius: 50px;
   border: none;
   background-color: green;
+}
+.message{
+  margin-top: 20px;
+  padding: 20px;
+  /* border-radius: 10px; */
+  width: 100%;
+}
+.bot{
+  background-color: aliceblue;
+  margin-left: 30px;
+  width: fit-content;
+  /* border-radius: 10px; */
+  float: left;
+  margin-right: 10%;
+  border-radius: 20px 20px 20px 0px;
+}
+.user{
+  background-color: aliceblue;
+  float: right;
+  margin-left: 40%;
+  width: fit-content;
+  margin-right: 30px;
+  border-radius: 20px 20px 0px 20px;
+}
+.chat-input ,.chat-btn{
+  margin-top: 30px;
+}
+.message-dummy{
+  margin-top: 20px;
+  padding: 20px;
+  /* border-radius: 10px; */
+  width: 100%;
+  background-color: aliceblue;
+  margin-left: 30px;
+  width: fit-content;
+  /* border-radius: 10px; */
+  float: left;
+  margin-right: 10%;
+  border-radius: 20px 20px 20px 0px;
+}
+.input-container{
+  /* margin-top: 400px; */
+}
+.messages-container{
+  height: 400px;
+  width: 400px;
+  overflow-x: scroll;
+  align-content: flex-end;
 }
